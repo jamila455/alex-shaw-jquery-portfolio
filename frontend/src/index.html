@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Shaw - Portfolio</title>
+    <!-- Material Design Components CSS -->
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Roboto Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Material Design Components JS -->
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <script src="js/app.js" defer></script>
+</head>
+<body class="mdc-typography">
+
+    <!-- Main Content -->
+    <main class="mdc-top-app-bar--fixed-adjust">
+        <div class="content-container">
+            <!-- Hero Section -->
+            <section class="hero-section" id="hero">
+                <div class="mdc-card hero-card">
+                    <div class="mdc-card__primary-action">
+                        <div class="hero-content">
+                            <div class="profile-image">
+                                <div class="avatar-placeholder">
+                                    <i class="material-icons">person</i>
+                                </div>
+                            </div>
+                            <div class="hero-text">
+                                <h1 class="mdc-typography--headline4">Alex Shaw</h1>
+                                <h2 class="mdc-typography--headline6 subtitle">Full Stack Developer</h2>
+                                <p class="mdc-typography--body1">Passionate about creating innovative web applications with modern technologies like jQuery, JavaScript, and Material Design.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Skills Section -->
+            <section class="skills-section" id="skills">
+                <h2 class="mdc-typography--headline5 section-title">Skills</h2>
+                <div class="skills-grid">
+                    <div class="mdc-card skill-card">
+                        <div class="mdc-card__primary-action">
+                            <div class="skill-content">
+                                <i class="material-icons skill-icon">code</i>
+                                <h3 class="mdc-typography--headline6">Frontend</h3>
+                                <p class="mdc-typography--body2">HTML, CSS, JavaScript, jQuery, React, Material Design</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mdc-card skill-card">
+                        <div class="mdc-card__primary-action">
+                            <div class="skill-content">
+                                <i class="material-icons skill-icon">storage</i>
+                                <h3 class="mdc-typography--headline6">Backend</h3>
+                                <p class="mdc-typography--body2">Node.js, Python, Express, REST APIs, Database Design</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mdc-card skill-card">
+                        <div class="mdc-card__primary-action">
+                            <div class="skill-content">
+                                <i class="material-icons skill-icon">build</i>
+                                <h3 class="mdc-typography--headline6">Tools</h3>
+                                <p class="mdc-typography--body2">Git, Docker, VS Code, Webpack, npm, Linux</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects Section -->
+            <section class="projects-section" id="projects">
+                <h2 class="mdc-typography--headline5 section-title">Projects</h2>
+                <div class="projects-grid">
+                    <div class="mdc-card project-card">
+                        <div class="mdc-card__media project-media">
+                            <div class="project-placeholder">
+                                <i class="material-icons">web</i>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="mdc-typography--headline6">E-Commerce Platform</h3>
+                            <p class="mdc-typography--body2">Full-stack web application built with jQuery and Material Design, featuring user authentication and payment processing.</p>
+                            <div class="project-tech">
+                                <span class="tech-chip">jQuery</span>
+                                <span class="tech-chip">Node.js</span>
+                                <span class="tech-chip">Material Design</span>
+                            </div>
+                        </div>
+                        <div class="mdc-card__actions">
+                            <button class="mdc-button mdc-card__action" data-project="ecommerce">
+                                <span class="mdc-button__label">View Project</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="mdc-card project-card">
+                        <div class="mdc-card__media project-media">
+                            <div class="project-placeholder">
+                                <i class="material-icons">dashboard</i>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="mdc-typography--headline6">Data Dashboard</h3>
+                            <p class="mdc-typography--body2">Interactive dashboard for data visualization using jQuery and Chart.js with real-time updates and responsive design.</p>
+                            <div class="project-tech">
+                                <span class="tech-chip">jQuery</span>
+                                <span class="tech-chip">Chart.js</span>
+                                <span class="tech-chip">REST API</span>
+                            </div>
+                        </div>
+                        <div class="mdc-card__actions">
+                            <button class="mdc-button mdc-card__action" data-project="dashboard">
+                                <span class="mdc-button__label">View Project</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="mdc-card project-card">
+                        <div class="mdc-card__media project-media">
+                            <div class="project-placeholder">
+                                <i class="material-icons">phone_android</i>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="mdc-typography--headline6">Task Manager App</h3>
+                            <p class="mdc-typography--body2">Progressive Web App for task management with offline capabilities, built using jQuery and Material Design Components.</p>
+                            <div class="project-tech">
+                                <span class="tech-chip">PWA</span>
+                                <span class="tech-chip">jQuery</span>
+                                <span class="tech-chip">LocalStorage</span>
+                            </div>
+                        </div>
+                        <div class="mdc-card__actions">
+                            <button class="mdc-button mdc-card__action" data-project="taskmanager">
+                                <span class="mdc-button__label">View Project</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Floating Action Button -->
+        <button class="mdc-fab demo-fab" id="scroll-top">
+            <div class="mdc-fab__ripple"></div>
+            <span class="material-icons mdc-fab__icon">keyboard_arrow_up</span>
+        </button>
+    </main>
+</body>
+</html>
