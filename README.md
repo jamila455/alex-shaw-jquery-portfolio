@@ -1,7 +1,3 @@
-# Alex Shaw - jQuery Portfolio
-
-A modern, minimal cyberpunk-themed portfolio website built with jQuery and Material Design Components.
-
 ## Running Locally in Codespaces
 
 ### Prerequisites
@@ -27,23 +23,7 @@ A modern, minimal cyberpunk-themed portfolio website built with jQuery and Mater
    - URL will be something like: `http://127.0.0.1:5500/frontend/src/index.html`
    - Live reload is enabled - changes save automatically refresh the browser
 
-### Project Structure
-```
-frontend/src/
-├── index.html          # Main portfolio page
-├── css/style.css       # Cyberpunk styling
-└── js/app.js          # Interactive functionality
-```
-
-### Making Changes
-- Edit HTML content in `index.html`
-- Modify styles in `css/style.css` 
-- Add interactivity in `js/app.js`
-- Save files to see changes instantly in the browser
-
-### Troubleshooting
-- If Live Server doesn't work, try the Command Palette (`Ctrl+Shift+P`) → "Live Server: Open with Live Server"
-- Check browser console (F12) for any JavaScript errors
-- Ensure you're opening the correct `index.html` file in `frontend/src/`
-
-That's it! Your cyberpunk portfolio is now running locally. 🚀
+   **If you need to open the site manually in the host's default browser:**
+   ```
+   $BROWSER http://127.0.0.1:5500/frontend/src/index.html
+   ```
