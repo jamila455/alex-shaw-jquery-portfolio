@@ -20,6 +20,27 @@ $(document).ready(function() {
     
     // Add loading animations for page transitions
     addLoadingAnimations();
+
+    // Dark mode toggle button logic
+    $('#dark-mode-toggle').on('click', function() {
+        const body = $('body');
+        body.toggleClass('light-mode');
+        // Change icon
+        const icon = $('#dark-mode-icon');
+        if (body.hasClass('light-mode')) {
+            icon.text('light_mode');
+        } else {
+            icon.text('dark_mode');
+        }
+        // Optionally, save preference to localStorage
+        localStorage.setItem('theme', body.hasClass('light-mode') ? 'light' : 'dark');
+    });
+
+    // On page load, set theme from localStorage
+    if (localStorage.getItem('theme') === 'light') {
+        $('body').addClass('light-mode');
+        $('#dark-mode-icon').text('light_mode');
+    }
 });
 
 /**

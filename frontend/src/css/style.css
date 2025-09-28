@@ -7,6 +7,38 @@
 
 /* Root variables for colors, gradients, shadows, etc. */
 :root {
+    /* Light theme palette */
+    --light-primary-color: #6366f1;
+    --light-primary-light: #818cf8;
+    --light-primary-dark: #4338ca;
+    --light-accent-color: #06b6d4;
+    --light-accent-subtle: #0891b2;
+    --light-text-primary: #1e293b;
+    --light-text-secondary: #334155;
+    --light-text-muted: #64748b;
+    --light-text-subtle: #94a3b8;
+    --light-text-dim: #cbd5e1;
+    --light-background: #f8fafc;
+    --light-background-secondary: #e2e8f0;
+    --light-background-tertiary: #cbd5e1;
+    --light-surface: #ffffff;
+    --light-surface-hover: #f1f5f9;
+    --light-surface-elevated: #e0e7ef;
+    --light-surface-glass: rgba(255,255,255,0.4);
+    --light-border: #cbd5e1;
+    --light-border-subtle: #e2e8f0;
+    --light-border-focus: #6366f1;
+    --light-shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    --light-shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.07), 0 2px 4px -2px rgb(0 0 0 / 0.07);
+    --light-shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.08), 0 4px 6px -4px rgb(0 0 0 / 0.08);
+    --light-shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.09), 0 8px 10px -6px rgb(0 0 0 / 0.09);
+    --light-shadow-glow: 0 0 20px rgb(99 102 241 / 0.08);
+    --light-shadow-glow-subtle: 0 0 30px rgb(6 182 212 / 0.07);
+    --light-gradient-primary: linear-gradient(135deg, #6366f1 0%, #06b6d4 100%);
+    --light-gradient-accent: linear-gradient(135deg, #06b6d4 0%, #6366f1 100%);
+    --light-gradient-surface: linear-gradient(135deg, #e2e8f0 0%, #cbd5e1 100%);
+    --light-glass-bg: rgba(255,255,255,0.6);
+    --light-glass-border: rgba(148, 163, 184, 0.08);
     /* Color palette for dark theme */
     --primary-color: #6366f1;
     --primary-light: #818cf8;
@@ -67,6 +99,54 @@ body {
     overflow-x: hidden;
     min-height: 100vh;
     position: relative;
+}
+
+body.light-mode {
+    background: var(--light-background);
+    color: var(--light-text-primary);
+}
+
+body.light-mode .mdc-card,
+body.light-mode .mdc-top-app-bar,
+body.light-mode .mdc-fab,
+body.light-mode .mdc-text-field,
+body.light-mode .mdc-snackbar,
+body.light-mode .mdc-menu,
+body.light-mode .mdc-list,
+body.light-mode .mdc-dialog,
+body.light-mode .mdc-chip {
+    background: var(--light-surface);
+    color: var(--light-text-primary);
+    box-shadow: var(--light-shadow-md);
+}
+
+body.light-mode .mdc-typography--headline4,
+body.light-mode .mdc-typography--headline5,
+body.light-mode .mdc-typography--headline6,
+body.light-mode .mdc-typography--body1,
+body.light-mode .mdc-typography--body2 {
+    color: var(--light-text-primary);
+}
+
+body.light-mode .mdc-button,
+body.light-mode .mdc-icon-button {
+    background: var(--light-surface);
+    color: var(--light-primary-color);
+}
+
+body.light-mode .mdc-button:hover,
+body.light-mode .mdc-icon-button:hover {
+    background: var(--light-surface-hover);
+}
+
+body.light-mode .profile-image .avatar-placeholder {
+    background: var(--light-background-secondary);
+    color: var(--light-text-muted);
+}
+
+body.light-mode .mdc-card__primary-action {
+    background: var(--light-surface-hover);
+}
 }
 
 /* Animated background using radial gradients */
