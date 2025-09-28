@@ -820,3 +820,13 @@ html { scroll-behavior: smooth; }
 ::-webkit-scrollbar-track { background: var(--background-secondary); }
 ::-webkit-scrollbar-thumb { background: var(--gradient-primary); border-radius: 4px; }
 ::-webkit-scrollbar-thumb:hover { background: var(--gradient-accent); }
+
+/* Add styles for the dark mode toggle button */
+#dark-mode-toggle {
+    color: var(--text-primary);
+    background: var(--surface);
+    border-radius: 8px;
+    width: 40px;
+    height: 40px;
+    transition: all var(--transition-normal);
+}
