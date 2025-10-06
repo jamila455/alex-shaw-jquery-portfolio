@@ -830,3 +830,11 @@ html { scroll-behavior: smooth; }
     height: 40px;
     transition: all var(--transition-normal);
 }
+
+* Add hover effect for dark mode toggle button */
+#dark-mode-toggle:hover {
+    color: var(--primary-light);
+    background: var(--surface-hover);
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-glow);
+}

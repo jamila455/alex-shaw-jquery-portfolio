@@ -30,6 +30,27 @@
     <script src="js/app.js" defer></script>
 </head>
 <body class="mdc-typography">
+
+    <!-- Top App Bar for navigation and branding -->
+    <header class="mdc-top-app-bar mdc-top-app-bar--fixed">
+        <div class="mdc-top-app-bar__row">
+            <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+                <span class="mdc-top-app-bar__title">Alex Shaw</span>
+            </section>
+            <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar">
+                <a href="#hero" class="mdc-top-app-bar__action-item mdc-icon-button" aria-label="Home" title="Home">
+                    <i class="material-icons">home</i>
+                </a>
+                <a href="#skills" class="mdc-top-app-bar__action-item mdc-icon-button" aria-label="Skills" title="Skills">
+                    <i class="material-icons">build</i>
+                </a>
+                <a href="#projects" class="mdc-top-app-bar__action-item mdc-icon-button" aria-label="Projects" title="Projects">
+                    <i class="material-icons">work</i>
+                </a>
+            </section>
+        </div>
+        
+    </header>
     <!--
         Main content is wrapped in <main>.
         The class 'mdc-top-app-bar--fixed-adjust' ensures content is not hidden behind the fixed top app bar.
